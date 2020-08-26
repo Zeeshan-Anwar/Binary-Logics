@@ -1,37 +1,89 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>	Responsive Layout</title>
+<style>
+	/*--------------Base Style----------*/
+	*{
+	  box-sizing: border-box;
+	}
+	body {
+  background-color: white;
+}
+	h1{
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.content1{
+		margin-top: 0px;
+        right: 0px;
+        border: 3px solid #73AD21;
+        background-color: orange;
+        }
+        .content2{
+		margin-top: 0px;
+        right: 0px;
+        border: 3px solid #73AD21;
+        background-color: red;
+        }
+        .content3{
+		margin-top: 0px;
+        right: 0px;
+        border: 3px solid #73AD21;
+        background-color: green;
+        }
+	/*simple responsive frame work*/
 
-You can use the [editor on GitHub](https://github.com/Zeeshan-Anwar/Binary-Logics/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+     .row{
+		width: 100%;
+		}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Zeeshan-Anwar/Binary-Logics/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+	/*large devices only*/
+	@media (min-width: 992px){
+		.col-lg-1,.col-lg-2,.col-lg-3{
+			float: left;
+			
+		}
+		.col-lg-1{ width: 30% }
+		.col-lg-2{ width: 30% }
+		.col-lg-3{ width: 30% }
+	}
+	/*medium Screen Devices*/
+	@media (min-width: 768px) and (max-width: 991px){
+		.col-md-1,.col-md-2,{
+		float: inline-left;
+			
+		}
+		.col-md-1{ width: 45% }
+		.col-md-2{ width: 45% }
+	}
+	#box{
+		padding: 5px;
+		background-color: gray;
+		margin: 10px;
+	     }
+	div h2{
+		border: 1px black;
+	}
+    
+</style>	
+</head>
+<body>
+<h1> Our Menue</h1>
+<div class="row">
+	<div id="box" class="col-lg-1 col-md-1">
+	<h2 class="content1">chicken</h2>
+		<p> hdfgyjfjyfkhgfkfkgdfghfuyiuyou</p>
+	</div>
+	<div id="box" class="col-lg-2 col-md-2">
+    <h2 class="content2">Beef</h2>
+    	<div><p>hdfycfcytfuygygiohoijoihjygy</p></div>
+    </div>
+    <div id="box" class="col-lg-3">
+    <h2 class="content3">sushi</h2>
+    	<div><p> gfstfkghfgkyuktuirityfiytfityf</p></div>
+    </div>
+</div>    
+</body>
+</html>
